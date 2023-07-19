@@ -3,24 +3,45 @@ import React from "react";
 const Testimonial = () => {
   return (
     <div id="testimonial">
-      <h2>Testimonial</h2>
+      <h2>Skills</h2>
 
       <section>
         <TestimonialCard
-          name={"Abhishek"}
-          feedback={"Your Teaching skills are so good."}
+          name={"HTML"}
         />
 
         <TestimonialCard
-          name={"Ramzi"}
-          feedback={
-            "Wow what a portfolio, doesn't expected this to be on youtube!"
-          }
+          name={"CSS"}
         />
 
         <TestimonialCard
-          name={"Sundar Pichai"}
-          feedback={"Amazing seems like you should the Google CEO"}
+          name={"React"}
+        />
+
+        <TestimonialCard
+          name={"Redux"}
+        />
+
+        <TestimonialCard
+          name={"Python"}
+        />
+        <TestimonialCard
+          name={"Node.js"}
+        />
+        <TestimonialCard
+          name={"Django"}
+        />
+        <TestimonialCard
+          name={"MongoDB"}
+        />
+        <TestimonialCard
+          name={"Networking"}
+        />
+        <TestimonialCard
+          name={"GIT"}
+        />
+        <TestimonialCard
+          name={"EXPRESS"}
         />
       </section>
     </div>
@@ -29,10 +50,6 @@ const Testimonial = () => {
 
 const TestimonialCard = ({ name, feedback }) => (
   <article>
-    <img
-      src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
-      alt="User"
-    />
     <h4>{name}</h4>
     <p>{feedback}</p>
   </article>

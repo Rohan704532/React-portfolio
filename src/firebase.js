@@ -1,13 +1,14 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDYAW9F1kP29j38dfZuZxK4lppUkSLD25c",
-  authDomain: "react-portfolio-abhishek.firebaseapp.com",
-  projectId: "react-portfolio-abhishek",
-  storageBucket: "react-portfolio-abhishek.appspot.com",
-  messagingSenderId: "278164302078",
-  appId: "1:278164302078:web:797fe5960bb12b5fca1daf",
+  apiKey: "AIzaSyCoHVBu5h3CHQi1BWnzUDvZT50f1xcVSug",
+  authDomain: "rohan-portfolio-8cfa7.firebaseapp.com",
+  projectId: "rohan-portfolio-8cfa7",
+  storageBucket: "rohan-portfolio-8cfa7.appspot.com",
+  messagingSenderId: "463762808425",
+  appId: "1:463762808425:web:477baead7729196ebb4cf8"
 };
 
 export const app = initializeApp(firebaseConfig);

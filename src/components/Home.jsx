@@ -8,15 +8,10 @@ const Home = ({ ratio }) => {
   const clientCount = useRef(null);
   const projectCount = useRef(null);
 
-  const animationClientsCount = () => {
-    animate(0, 100, {
-      duration: 1,
-      onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
-    });
-  };
+
   const animationProjectsCount = () => {
-    animate(0, 500, {
-      duration: 1,
+    animate(0, 5, {
+      duration: 2,
       onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
     });
   };
@@ -48,7 +43,7 @@ const Home = ({ ratio }) => {
       <section>
         <div>
           <motion.h1 {...animations.h1}>
-            Hi, I Am <br /> Abhishek Singh
+            Hi, I Am <br /> Rohan Singh
           </motion.h1>
 
           <Typewriter
@@ -62,25 +57,11 @@ const Home = ({ ratio }) => {
           />
 
           <div>
-            <a href="mailto:official.6packprogrammer@gmail.com">Hire Me</a>
+            <a href="mailto:rohan704532@gmail.com">Hire Me</a>
             <a href="#work">
               Projects <BsArrowUpRight />
             </a>
           </div>
-
-          <article>
-            <p>
-              +
-              {ratio < 2 && (
-                <motion.span
-                  whileInView={animationClientsCount}
-                  ref={clientCount}
-                ></motion.span>
-              )}
-            </p>
-            <span>Clients Worldwide</span>
-          </article>
-
           <aside>
             <article>
               <p>
@@ -90,7 +71,7 @@ const Home = ({ ratio }) => {
                     ref={projectCount}
                     whileInView={animationProjectsCount}
                   >
-                    500
+                    5 +
                   </motion.span>
                 )}
               </p>
@@ -99,7 +80,7 @@ const Home = ({ ratio }) => {
 
             <article data-special>
               <p>Contact</p>
-              <span>official.6packprogrammer@gmail.com</span>
+              <span>rohan704532@gmail.com</span>
             </article>
           </aside>
         </div>
